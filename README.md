@@ -3,7 +3,7 @@
 - api **hono** (rpc optional)
 - frontend framework **React**
 - runtime **bun** backend/frontend
-- UI **tailwind/daisyUI** (optional)
+- UI **tailwind/daisyUI/Lucide** (optional)
 - router **TanstackRouter**
 - commands multiple start **Concurrently**
 
