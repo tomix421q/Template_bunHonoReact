@@ -1,0 +1,17 @@
+{
+  "name": "bun-hono-react-template",
+  "scripts": {
+    "client": "cd client && bun run dev",
+    "server": "bun run --hot server/index.ts",
+    "dev": "concurrently \"bun run server\" \"bun run client\"",
+    "build": "bun build ./server/index.ts --outdir ./dist/server --target bun && cd client && bun run build --outDir ../dist/client",
+    "start": "bun run dist/server/index.js"
+  },
+  "dependencies": {
+    "hono": "^4.10.7"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^9.2.1"
+  }
+}
